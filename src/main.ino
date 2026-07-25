@@ -20,6 +20,16 @@ enum TrafficState
 
 TrafficState currentState = RED;
 //=====================================================
+// Function to Control Traffic Lights
+//=====================================================
+
+void setTrafficLights(bool red, bool yellow, bool green)
+{
+    digitalWrite(RED_LED, red);
+    digitalWrite(YELLOW_LED, yellow);
+    digitalWrite(GREEN_LED, green);
+}
+//=====================================================
 // Arduino Entry Functions
 //=====================================================
 
@@ -36,9 +46,7 @@ void loop()
     {
         case RED:
 
-            digitalWrite(RED_LED, HIGH);
-            digitalWrite(YELLOW_LED, LOW);
-            digitalWrite(GREEN_LED, LOW);
+            setTrafficLights(HIGH, LOW, LOW);
 
             delay(3000);
 
@@ -48,9 +56,7 @@ void loop()
 
         case RED_YELLOW:
 
-            digitalWrite(RED_LED, HIGH);
-            digitalWrite(YELLOW_LED, HIGH);
-            digitalWrite(GREEN_LED, LOW);
+           setTrafficLights(HIGH, HIGH, LOW);
 
             delay(1000);
 
@@ -60,9 +66,7 @@ void loop()
 
         case GREEN:
 
-            digitalWrite(RED_LED, LOW);
-            digitalWrite(YELLOW_LED, LOW);
-            digitalWrite(GREEN_LED, HIGH);
+           setTrafficLights(LOW, LOW, HIGH);
 
             delay(3000);
 
@@ -72,9 +76,7 @@ void loop()
 
         case YELLOW:
 
-            digitalWrite(RED_LED, LOW);
-            digitalWrite(YELLOW_LED, HIGH);
-            digitalWrite(GREEN_LED, LOW);
+           setTrafficLights(LOW, HIGH, LOW);
 
             delay(1000);
 
