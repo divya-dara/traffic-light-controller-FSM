@@ -24,7 +24,9 @@ The controller cycles through four traffic light states:
 before repeating continuously.
 
 ---
+## Finite State Machine
 
+![Traffic Light FSM](docs/state-diagram.svg)
 ## Features
 
 - Arduino Uno based implementation
