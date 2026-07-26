@@ -49,6 +49,9 @@ before repeating continuously.
 ## Hardware Connection
 ![hardware connection](images/hardware-connection.png)
 ---
+## Simulation Demo
+
+![Traffic Light Demo](simulation/simulation-demo.gif)
 
 ## Software Used
 
