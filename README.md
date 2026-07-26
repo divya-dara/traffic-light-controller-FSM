@@ -47,7 +47,7 @@ before repeating continuously.
 - 3 × 220Ω Resistors
 - Jumper Wires
 ## Hardware Connection
-![hardware connection](hardware-connection.png)
+![hardware connection](images/hardware-connection.png)
 ---
 
 ## Software Used
