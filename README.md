@@ -27,6 +27,11 @@ before repeating continuously.
 ## Finite State Machine
 
 ![Traffic Light FSM](docs/state-diagram.svg)
+## Program Flow
+
+The following flowchart illustrates how the controller executes continuously using the Arduino `setup()` and `loop()` functions.
+
+![Program Flowchart](docs/program-flowchart.svg)
 ## Features
 
 - Arduino Uno based implementation
